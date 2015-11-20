@@ -1,0 +1,23 @@
+FORKING REPOSITORY:
+Hello Team
+
+If you would like to make a fork copy of the repository:
+
+Click on the repo
+Top Right hand corner, click the Fork Button(this will create a fork copy of repo.
+Now copy the clone URL on the right hand sidebar of the fork repo screen.
+Open Command Line, and cd into wherever you want to place the forked repo.
+In the command line type git clone *paste in the clone URL here* then hit Enter.(this creates a cloned copy of the fork onto your local computer.
+on Github go to original Repo(Ari’s) and copy the clone URL.
+In command line cd into the cloned fork repo.
+Type git remote add upstream *paste Ari’s clone URL here* then Enter. (This creates a remote that links to Ari’s repo called “upstream”).
+Make changes to the local cloned copy of the repo and save.
+Once you are happy with the changes, go back to command line, cd into your local fork repo(if not already on it)
+Type git add .  then Enter (after doing this you can type git status and Enter to check the correct changes are showing up).
+Type git commit -m “*Message on changes you made and time/date” then Enter.
+Now type git push origin master then Enter. (this will upload the changes back onto the fork repo in github)
+Once that is done, hop on to your forked repo page on GitHub and click Pull requests on the right hand sidebar.
+Then click new pull request > create a pull request 
+Make sure ari’s repo is showing as the base fork and your forked repo is showing as the head fork.
+Click Create pull request. Then a request should be sent to Ari to merge the changes.
+if you want to make more changes to the repo, go to your local copy, and perform a git pull upstream master while cd’d into your local fork repo folder.(always do this to keep your forked repo updated with the original repo(Ari’s Repo).
